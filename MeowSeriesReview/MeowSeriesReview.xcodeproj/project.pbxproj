@@ -13,6 +13,7 @@
 		97F25001271CB5B3006A99AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97F24FFF271CB5B3006A99AB /* LaunchScreen.storyboard */; };
 		97F2500A271CB7F9006A99AB /* TrendingSeriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F25009271CB7F9006A99AB /* TrendingSeriesVC.swift */; };
 		97F2500D271CB82E006A99AB /* CommentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F2500C271CB82E006A99AB /* CommentsVC.swift */; };
+		97F2500F271CBA19006A99AB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97F2500E271CBA19006A99AB /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		97F25002271CB5B3006A99AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97F25009271CB7F9006A99AB /* TrendingSeriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingSeriesVC.swift; sourceTree = "<group>"; };
 		97F2500C271CB82E006A99AB /* CommentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsVC.swift; sourceTree = "<group>"; };
+		97F2500E271CBA19006A99AB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		97F25008271CB63D006A99AB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				97F2500E271CBA19006A99AB /* GoogleService-Info.plist */,
 				97F24FF4271CB5AC006A99AB /* AppDelegate.swift */,
 				97F24FF6271CB5AC006A99AB /* SceneDelegate.swift */,
 				97F24FFD271CB5B3006A99AB /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			files = (
 				97F25001271CB5B3006A99AB /* LaunchScreen.storyboard in Resources */,
 				97F24FFE271CB5B3006A99AB /* Assets.xcassets in Resources */,
+				97F2500F271CBA19006A99AB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
