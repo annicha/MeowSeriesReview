@@ -3,9 +3,16 @@
 
 This is a simple demo app that let you express comments about TV series.
 
-### App Preview
-<img src="meowmovie.gif" alt="Screenshots" width="400px">
-
+### To do
+- [x] Design overall UI
+- [x] Test API fetching via Postman
+- [ ] Set up project with FireStore and Auth
+- [ ] Work on TV list and detail view
+- [ ] Work on Cat list
+- [ ] Implement creating comment
+- [ ] Implement listener and filter for all comments
+- [ ] Update movie detail view with comment list
+- [ ] Add app preview gif to this file :tada:
 
 ### API Used
 - [REST COUNTRIES 🇵🇪](https://restcountries.com)
