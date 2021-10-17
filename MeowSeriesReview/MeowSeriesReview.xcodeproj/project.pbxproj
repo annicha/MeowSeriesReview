@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		97F24FF5271CB5AC006A99AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F24FF4271CB5AC006A99AB /* AppDelegate.swift */; };
 		97F24FF7271CB5AC006A99AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F24FF6271CB5AC006A99AB /* SceneDelegate.swift */; };
-		97F24FF9271CB5AC006A99AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F24FF8271CB5AC006A99AB /* ViewController.swift */; };
-		97F24FFC271CB5AC006A99AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97F24FFA271CB5AC006A99AB /* Main.storyboard */; };
 		97F24FFE271CB5B3006A99AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97F24FFD271CB5B3006A99AB /* Assets.xcassets */; };
 		97F25001271CB5B3006A99AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97F24FFF271CB5B3006A99AB /* LaunchScreen.storyboard */; };
+		97F2500A271CB7F9006A99AB /* TrendingSeriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F25009271CB7F9006A99AB /* TrendingSeriesVC.swift */; };
+		97F2500D271CB82E006A99AB /* CommentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F2500C271CB82E006A99AB /* CommentsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		97F24FF1271CB5AC006A99AB /* MeowSeriesReview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeowSeriesReview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F24FF4271CB5AC006A99AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97F24FF6271CB5AC006A99AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		97F24FF8271CB5AC006A99AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		97F24FFB271CB5AC006A99AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97F24FFD271CB5B3006A99AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97F25000271CB5B3006A99AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97F25002271CB5B3006A99AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97F25009271CB7F9006A99AB /* TrendingSeriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingSeriesVC.swift; sourceTree = "<group>"; };
+		97F2500C271CB82E006A99AB /* CommentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,31 @@
 		97F24FF3271CB5AC006A99AB /* MeowSeriesReview */ = {
 			isa = PBXGroup;
 			children = (
-				97F24FF4271CB5AC006A99AB /* AppDelegate.swift */,
-				97F24FF6271CB5AC006A99AB /* SceneDelegate.swift */,
-				97F24FF8271CB5AC006A99AB /* ViewController.swift */,
-				97F24FFA271CB5AC006A99AB /* Main.storyboard */,
-				97F24FFD271CB5B3006A99AB /* Assets.xcassets */,
 				97F24FFF271CB5B3006A99AB /* LaunchScreen.storyboard */,
-				97F25002271CB5B3006A99AB /* Info.plist */,
+				97F2500B271CB800006A99AB /* ViewControllers */,
+				97F25008271CB63D006A99AB /* Resources */,
 			);
 			path = MeowSeriesReview;
+			sourceTree = "<group>";
+		};
+		97F25008271CB63D006A99AB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				97F24FF4271CB5AC006A99AB /* AppDelegate.swift */,
+				97F24FF6271CB5AC006A99AB /* SceneDelegate.swift */,
+				97F24FFD271CB5B3006A99AB /* Assets.xcassets */,
+				97F25002271CB5B3006A99AB /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		97F2500B271CB800006A99AB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				97F25009271CB7F9006A99AB /* TrendingSeriesVC.swift */,
+				97F2500C271CB82E006A99AB /* CommentsVC.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +143,6 @@
 			files = (
 				97F25001271CB5B3006A99AB /* LaunchScreen.storyboard in Resources */,
 				97F24FFE271CB5B3006A99AB /* Assets.xcassets in Resources */,
-				97F24FFC271CB5AC006A99AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97F24FF9271CB5AC006A99AB /* ViewController.swift in Sources */,
 				97F24FF5271CB5AC006A99AB /* AppDelegate.swift in Sources */,
+				97F2500A271CB7F9006A99AB /* TrendingSeriesVC.swift in Sources */,
+				97F2500D271CB82E006A99AB /* CommentsVC.swift in Sources */,
 				97F24FF7271CB5AC006A99AB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +163,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		97F24FFA271CB5AC006A99AB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				97F24FFB271CB5AC006A99AB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		97F24FFF271CB5B3006A99AB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,10 +299,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 67729QDLYV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MeowSeriesReview/Info.plist;
+				INFOPLIST_FILE = MeowSeriesReview/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,10 +326,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 67729QDLYV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MeowSeriesReview/Info.plist;
+				INFOPLIST_FILE = MeowSeriesReview/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
