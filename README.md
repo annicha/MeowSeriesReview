@@ -4,7 +4,7 @@
 This is a simple demo app that let you express comments about TV series.
 
 ### App Preview
-![Screenshots](meowmovie.gif)
+![Screenshots](meowmovie.gif | width=400)
 
 ### API Used
 - [REST COUNTRIES 🇵🇪](https://restcountries.com)
@@ -25,5 +25,5 @@ struct SecretKeys {
 
 
 ### Early Design via Sketch
-![Screenshots](meowmovie.gif)
+![Screenshots](meowmovie.gif | width=400)
 
