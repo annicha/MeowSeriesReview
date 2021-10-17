@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97193CAF271CC2BE00CC1BBE /* TVSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97193CAE271CC2BE00CC1BBE /* TVSeries.swift */; };
 		97F24FF5271CB5AC006A99AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F24FF4271CB5AC006A99AB /* AppDelegate.swift */; };
 		97F24FF7271CB5AC006A99AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F24FF6271CB5AC006A99AB /* SceneDelegate.swift */; };
 		97F24FFE271CB5B3006A99AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97F24FFD271CB5B3006A99AB /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		97193CAE271CC2BE00CC1BBE /* TVSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSeries.swift; sourceTree = "<group>"; };
 		97F24FF1271CB5AC006A99AB /* MeowSeriesReview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeowSeriesReview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F24FF4271CB5AC006A99AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97F24FF6271CB5AC006A99AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97193CB0271CC2C200CC1BBE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				97193CAE271CC2BE00CC1BBE /* TVSeries.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		97F24FE8271CB5AC006A99AB = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +133,7 @@
 				97F24FFF271CB5B3006A99AB /* LaunchScreen.storyboard */,
 				97F2500B271CB800006A99AB /* ViewControllers */,
 				97F25008271CB63D006A99AB /* Resources */,
+				97193CB0271CC2C200CC1BBE /* Models */,
 			);
 			path = MeowSeriesReview;
 			sourceTree = "<group>";
@@ -249,6 +260,7 @@
 			files = (
 				97F24FF5271CB5AC006A99AB /* AppDelegate.swift in Sources */,
 				97F2500A271CB7F9006A99AB /* TrendingSeriesVC.swift in Sources */,
+				97193CAF271CC2BE00CC1BBE /* TVSeries.swift in Sources */,
 				97F2500D271CB82E006A99AB /* CommentsVC.swift in Sources */,
 				97F24FF7271CB5AC006A99AB /* SceneDelegate.swift in Sources */,
 			);
