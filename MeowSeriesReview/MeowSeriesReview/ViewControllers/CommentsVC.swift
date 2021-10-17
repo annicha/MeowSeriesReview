@@ -13,4 +13,8 @@ class CommentsVC: UIViewController {
         super.viewDidLoad()
 
     }
+	
+	func setupView(){
+		view.backgroundColor = .systemBackground
+	}
 }

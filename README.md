@@ -6,7 +6,7 @@ This is a simple demo app that let you express comments about TV series.
 ### To do
 - [x] Design overall UI
 - [x] Test API fetching via Postman
-- [ ] Set up project with FireStore and Auth
+- [x] Setup the frameworks
 - [ ] Work on TV list and detail view
 - [ ] Work on Cat list
 - [ ] Implement creating comment

@@ -14,4 +14,7 @@ class TrendingSeriesVC: UIViewController {
 
     }
 
+	func setupView(){
+		view.backgroundColor = .systemBackground
+	}
 }
