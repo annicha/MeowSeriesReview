@@ -15,7 +15,7 @@ extension UIViewController {
 									okButtonTitle: String? = nil,
 									_ completion: ( () -> Void)? = nil) {
 		DispatchQueue.main.async {
-			let alertVC = GFAlertVC(title: title,
+			let alertVC = MSRAlertVC(title: title,
 									message: message,
 									okButtonTitle: okButtonTitle,
 									showCancelButton: okButtonTitle != nil,
