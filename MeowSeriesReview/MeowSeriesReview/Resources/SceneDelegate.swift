@@ -24,8 +24,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		let commentsVC = CommentsVC()
 		commentsVC.title = "All Comments"
 		
+		let iconConfig = UIImage.SymbolConfiguration(scale: .large)
+		let icon = UIImage(systemName: "text.bubble", withConfiguration: iconConfig)
+		
 		// position as first tab item
-		commentsVC.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 0)
+		commentsVC.tabBarItem = UITabBarItem(title: "All Comments", image: icon, tag: 0)
 		
 		// each viewcontroller contains a navigation controller
 		return UINavigationController(rootViewController: commentsVC)
@@ -34,17 +37,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 	func createTrendingNC() -> UINavigationController {
 		let trendingVC = TrendingSeriesVC()
 		trendingVC.title = "Trending"
-		trendingVC.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 1)
 		
+		let iconConfig = UIImage.SymbolConfiguration(scale: .large)
+		let icon = UIImage(systemName: "flame", withConfiguration: iconConfig)
+		
+		// position as first tab item
+		trendingVC.tabBarItem = UITabBarItem(title: "Trending", image: icon, tag: 1)
+				
 		// each viewcontroller contains a navigation controller
 		return UINavigationController(rootViewController: trendingVC)
 	}
 	
 	func createTabbar() -> UITabBarController {
 		let tabbar = UITabBarController()
-		UITabBar.appearance().tintColor = .systemGreen
+		UITabBar.appearance().tintColor = .systemTeal
 		
-		// put the viewcontrollers on the tabbar
 		tabbar.viewControllers = [createCommentsNC(),
 								  createTrendingNC()]
 		
@@ -53,7 +60,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 	}
 	
 	func configureNavigationBar() {
-		UINavigationBar.appearance().tintColor = .systemGreen
+		UINavigationBar.appearance().tintColor = .systemTeal
 	}
 
 	func sceneDidDisconnect(_ scene: UIScene) {
