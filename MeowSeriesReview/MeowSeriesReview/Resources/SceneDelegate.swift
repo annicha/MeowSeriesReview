@@ -13,10 +13,54 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
 	func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-		// Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-		// If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-		// This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-		guard let _ = (scene as? UIWindowScene) else { return }
+		guard let windowScene = (scene as? UIWindowScene) else { return }
+		window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+		window?.windowScene = windowScene
+		window?.rootViewController = createTabbar()
+		window?.makeKeyAndVisible()
+	}
+	
+	func createCommentsNC() -> UINavigationController {
+		let commentsVC = CommentsVC()
+		commentsVC.title = "All Comments"
+		
+		let iconConfig = UIImage.SymbolConfiguration(scale: .large)
+		let icon = UIImage(systemName: "text.bubble", withConfiguration: iconConfig)
+		
+		// position as first tab item
+		commentsVC.tabBarItem = UITabBarItem(title: "All Comments", image: icon, tag: 0)
+		
+		// each viewcontroller contains a navigation controller
+		return UINavigationController(rootViewController: commentsVC)
+	}
+	
+	func createTrendingNC() -> UINavigationController {
+		let trendingVC = TrendingSeriesVC()
+		trendingVC.title = "Trending"
+		
+		let iconConfig = UIImage.SymbolConfiguration(scale: .large)
+		let icon = UIImage(systemName: "flame", withConfiguration: iconConfig)
+		
+		// position as first tab item
+		trendingVC.tabBarItem = UITabBarItem(title: "Trending", image: icon, tag: 1)
+				
+		// each viewcontroller contains a navigation controller
+		return UINavigationController(rootViewController: trendingVC)
+	}
+	
+	func createTabbar() -> UITabBarController {
+		let tabbar = UITabBarController()
+		UITabBar.appearance().tintColor = .systemTeal
+		
+		tabbar.viewControllers = [createCommentsNC(),
+								  createTrendingNC()]
+		
+		return tabbar
+		
+	}
+	
+	func configureNavigationBar() {
+		UINavigationBar.appearance().tintColor = .systemTeal
 	}
 
 	func sceneDidDisconnect(_ scene: UIScene) {
