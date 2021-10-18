@@ -33,7 +33,8 @@ struct SecretKeys {
 
 
 ### Early Design via Sketch
-<img src="meowmovie.gif" alt="Screenshots" width="400px">
+<img src="meowmovie.gif" alt="Gif Screenshot" width="400px">
+<img src="design.png" alt="Screenshots" width="400px">
 
 
 
